@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLH</title>
+  <link rel="icon" type="image/x-icon" href="images/img_2.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <span class="mlh-text">MLH</span>
+      <ul>
+        <li><a href="#">Github</a> </li>
+        <li><a href="#">Instagram</a> </li>
+        <li><a href="#">Linkedin</a> </li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Melih Işık</p>
+      <h1>Ege Üniversitesi bilgisayar mühendisliği 3. sınıf öğrencisiyim. Aynı zamanda
+      Android uygulama geliştirme alanı üzerinde çalışıyorum. Öğrendiklerimi
+      , çalışmalarımı ve projelerimi buradan paylaşıyorum.</h1>
+      <button class="contact-button" onclick="window.location.href='mailto:melihisik.ege@gmail.com'">Bana Ulaşın</button>
+    </div>
+  </div>
+</div>
+
+<div id="projects">
+  <div class="container">
+    <span class="projects-text">PROJELER</span>
+    <div class="row">
+      <div class="projects-col-1">
+        <div>
+          <img src="images/img.png">
+          <span>Studooo</span>
+          <div class="project-buttons">
+            <button class="btn-download">PlayStore</button>
+            <button class="btn-github">Github</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/img.png">
+          <span>Studooo</span>
+          <div class="project-buttons">
+            <button class="btn-download">PlayStore</button>
+            <button class="btn-github">Github</button>
+          </div>
+        </div>
+      </div>
+      <div class="projects-col-2">
+        <div>
+          <img src="images/img_1.png">
+          <span>Günübirlik</span>
+          <div class="project-buttons">
+            <button class="btn-download">PlayStore</button>
+            <button class="btn-github">Github</button>
+          </div>
+        </div>
+        <div>
+          <img src="images/img_1.png">
+          <span>Günübirlik</span>
+          <div class="project-buttons">
+            <button class="btn-download">PlayStore</button>
+            <button class="btn-github">Github</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="blog">
+  <div class="container">
+    <div class="blog-div">
+      <h1 class="projects-text">MVVM</h1>
+      <p class="blog-text">MVVM, android uygulama geliştirme sürecinde kullanılan bir yapıdır. "M", model; "V", view;
+      "VM" ise view model yapılarını temsil eder. Model, UI kısmında kullanıcıya gösterilecek dataların tutulduğu
+      yapılardır. Örneğin bir sosyal medya uygulamaasında sistem kullanıcı bilgileri üzerinden işler, her kullanıcı ise
+      model sınıfından üretilmiş birer nesnedir. Her "Model" nesnesi kullanıcıya ait isim, kullanıcı adı, gönderiler gibi
+      bilgileri tutar. View, bir kullanıcının direkt olarak kullandığı ve gördüğü UI kısmıdır, model yapısında bulunan
+      bilgiler view yapısında gösterilir. Örneğin view yapımız bir textview bulunuduruyorsa bu textview model yapımızın
+      isim veya kullanıcı adı verisini görüntüleyebilir. Son olarak ise view model ise model yapısında bulunan verileri
+      view yapısında gösterilmeye hazır hale getiren yapıdır, view direkt olarak model yani data ile değil view model ile
+      iletişimdedir. Yani kısaca view model; view ve model arasında bir köprü denilebilir, veriyi işler, değişiklikleri
+      dinler (observer tarzı yapılar ile) ve bunları view yapısında sergilenmeye hazır hale getirir.</p>
+      <button class="more-button">detay</button>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var moreButtons = document.querySelectorAll(".more-button");
+
+        moreButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                var blogText = this.previousElementSibling;
+                blogText.classList.toggle("expanded");
+                if (blogText.classList.contains("expanded")) {
+                    this.textContent = "küçült"; // Buton metnini değiştir
+                } else {
+                    this.textContent = "detay"; // Buton metnini geri değiştir
+                }
+            });
+        });
+    });
+</script>
+
+<hr color="#00FAC8">
+<div id="bottom">
+  <div class="container">
+    <nav class="bottom-nav">
+      <span class="mlh-text">MLH</span>
+      <ul>
+        <li><a href="#">Github</a> </li>
+        <li><a href="#">Instagram</a> </li>
+        <li><a href="#">Linkedin</a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</body>
+</html>
