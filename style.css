@@ -123,7 +123,7 @@ nav ul li a:hover::after {
 
 .projects-col-1 img, .projects-col-2 img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 60px;
     margin-bottom: 15px;
 }
 .projects-col-1 span, .projects-col-2 span {
@@ -138,11 +138,11 @@ nav ul li a:hover::after {
     font-size: 16px;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Başlangıçta gösterilecek satır sayısı */
+    -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
 }
 .blog-text.expanded {
-    -webkit-line-clamp: unset; /* Tüm metni göstermek için satır sınırını kaldır */
+    -webkit-line-clamp: unset; 
 }
 .blog-div{
     margin-bottom: 100px;
@@ -164,7 +164,7 @@ nav ul li a:hover::after {
 .project-buttons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Taşma durumunda alt alta gelmesini sağlar */
+  flex-wrap: wrap; 
   margin-top: 10px;
 }
 
@@ -174,8 +174,8 @@ nav ul li a:hover::after {
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  flex: 1 1 auto; /* Butonların yan yana durmasını sağlar ve esneklik verir */
-  min-width: 150px; /* Butonların minimum genişliğini ayarlar */
+  flex: 1 1 auto; 
+  min-width: 150px; 
 }
 
 .btn-download {
